@@ -44,7 +44,7 @@
 					width-mm = <396>;
 					height-mm = <324>;
 					data-mapping = "vesa-24";
-					power-supply = <&lvds_power>;
+//					power-supply = <&lvds_power>;
 
 					panel-timing {
 						clock-frequency = <90000000>;
@@ -127,7 +127,8 @@
 
 &dss {
 	pinctrl-names = "default";
-	pinctrl-0 = <&main_oldi0_pins_default &main_dss0_pins_default>;
+//	pinctrl-0 = <&main_oldi0_pins_default &main_dss0_pins_default>;
+	pinctrl-0 = <&main_oldi0_pins_default>;
 	status = "okay";
 };
 
@@ -151,13 +152,13 @@
 		};
 	};
 
-	port@1 {
-		reg = <1>;
-
-		dpi1_out: endpoint {
-			remote-endpoint = <&sii9022_in>;
-		};
-	};
+//	port@1 {
+//		reg = <1>;
+//
+//		dpi1_out: endpoint {
+//			remote-endpoint = <&sii9022_in>;
+//		};
+//	};
 };
 
 &epwm1 {

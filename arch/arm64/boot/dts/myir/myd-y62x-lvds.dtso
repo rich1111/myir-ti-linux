@@ -143,7 +143,8 @@
 
 &dss {
 	pinctrl-names = "default";
-	pinctrl-0 = <&main_oldi0_pins_default &main_dss0_pins_default>;
+//	pinctrl-0 = <&main_oldi0_pins_default &main_dss0_pins_default>;
+	pinctrl-0 = <&main_oldi0_pins_default>;
 	status = "okay";
 };
 
